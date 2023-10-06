@@ -1,0 +1,5 @@
+name: 'Check Notebooks For Syntax'
+description: 'A custom action for testing syntax errors in notebooks.'
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
