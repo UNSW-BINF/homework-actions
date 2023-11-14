@@ -19,6 +19,9 @@ def const_structured_check(astnode) -> bool:
     if isinstance(astnode, (ast.Constant, ast.Num, ast.Str)):
         return True
 
+    if isinstance(astnode, ast.UnaryOp) and isinstance(astnode.op, ast.USub):
+        return isinstance(astnode.operand, (ast.Constant, ast.Num)) and isinstance(astnode.operand.n, int)
+
     if isinstance(astnode, (ast.List, ast.Set, ast.Tuple)):
         return all(const_structured_check(elt) for elt in astnode.elts)
 
