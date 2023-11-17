@@ -1,0 +1,7 @@
+name: 'Action Notebook syntax errors'
+description: 'Check notebooks for syntax errors'
+runs:
+  using: 'composite'
+  steps:
+    - run: python homework-actions/action-notebook-syntax/action-notebook-syntax.py
+      shell: bash
