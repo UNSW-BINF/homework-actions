@@ -1,0 +1,8 @@
+name: 'Action Check if images are completely white'
+description: 'Check if any of the images is completely white'
+runs:
+  using: 'composite'
+  steps:
+    - run: python homework-actions/action-images-white/action-images-white.py
+      shell: bash
+      
