@@ -1,0 +1,11 @@
+name: 'Action Notebook explicit variable assignments'
+description: 'Check if variables are explicitly set'
+inputs:
+  args:
+    description: 'Arguments for the action'
+    required: true
+runs:
+  using: 'composite'
+  steps:
+    - run: python homework-actions/action-explicit-variables/action-explicit-variables.py ${{ inputs.args }}
+      shell: bash

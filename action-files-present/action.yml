@@ -1,0 +1,7 @@
+name: 'Action Notebook and helper functions file present'
+description: 'Check if files exist in the repository'
+runs:
+  using: 'composite'
+  steps:
+    - run: python homework-actions/action-files-present/action-files-present.py
+      shell: bash

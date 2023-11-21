@@ -1,0 +1,7 @@
+name: 'Action Helper functions compile'
+description: 'Check if helper_functions.py compiles with no errors'
+runs:
+  using: 'composite'
+  steps:
+    - run: python homework-actions/action-helper-compiles/action-helper-compiles.py
+      shell: bash
