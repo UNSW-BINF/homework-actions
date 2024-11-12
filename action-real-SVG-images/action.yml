@@ -1,0 +1,8 @@
+name: 'Action Check if images are real SVGs'
+description: 'Check if any of the images is not stored correctly as SVG.'
+runs:
+  using: 'composite'
+  steps:
+    - run: python homework-actions/action-real-SVG-images/action-real-SVG-images.py
+      shell: bash
+      
