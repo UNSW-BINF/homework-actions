@@ -1,0 +1,11 @@
+name: 'Action images as SVG'
+description: 'Check if images are stored as SVG not PNG'
+inputs:
+  args:
+    description: 'Arguments for the action'
+    required: true
+runs:
+  using: 'composite'
+  steps:
+    - run: python homework-actions/action-stored-SVG/action-stored-SVG.py ${{ inputs.args }}
+      shell: bash
