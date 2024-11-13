@@ -29,4 +29,4 @@ if __name__ == "__main__":
     if invalid_pngs:
         raise ValueError(f"The following images are stored as PNG instead of SVG: {invalid_pngs}")
     else:
-        print("All SVG files are valid.")
+        print("All required images are stored also as SVG.")
