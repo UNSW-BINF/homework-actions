@@ -6,5 +6,5 @@ Adding the following lines in the GitHub actions tests for syntax errors:
 
 ```yaml
 - name: Check Syntax
-  uses: IB-ULFRI/homework-actions@master
+  uses: UNSW-BINF/homework-actions@master
 ``` 
