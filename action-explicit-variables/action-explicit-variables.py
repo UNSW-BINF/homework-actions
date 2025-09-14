@@ -85,7 +85,7 @@ def parse_ast(NOTEBOOK, directory="./"):
 
 def get_notebook_filename(filenames) -> str:
 
-    pattern = r"^homework-[1-5]\.ipynb$"
+    pattern = r"workbook\.ipynb$"
     notebook_files = [fn for fn in filenames if re.match(pattern, fn)]
 
     if len(notebook_files) == 1:
@@ -93,12 +93,12 @@ def get_notebook_filename(filenames) -> str:
 
     elif len(notebook_files) > 1:
         raise KeyError(
-            f"Too many homework notebooks detected: {notebook_files}. Please delete or rename one."
+            f"Too many notebooks detected: {notebook_files}. Please delete or rename one."
         )
 
     else:
         raise KeyError(
-            "No homework notebook detected. Check the name of the homework notebook and keep the original name."
+            "No notebook detected. Check the name of the homework notebook and keep the original name."
         )
 
 
