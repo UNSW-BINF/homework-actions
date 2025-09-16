@@ -43,6 +43,10 @@ def parse_ast(NOTEBOOK, directory="./"):
 def get_notebook_filename(filenames) -> str:
 
     pattern = "workbook.ipynb"
+    for fn in filenames:
+        print(fn)
+        if re.match(pattern, fn):
+            print("!")
     notebook_files = [fn for fn in filenames if re.match(pattern, fn)]
     print(pattern)
     print(notebook_files) 
