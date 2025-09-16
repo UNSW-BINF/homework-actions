@@ -98,7 +98,7 @@ def get_notebook_filename(filenames) -> str:
 
     else:
         raise KeyError(
-            "No notebook detected. Check the name of the notebook and keep the original name."
+            "No notebook detected - check the name of the notebook and keep the original name."
         )
 
 
