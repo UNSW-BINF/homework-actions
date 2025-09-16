@@ -46,6 +46,7 @@ def get_notebook_filename(filenames) -> str:
     notebook_files = [fn for fn in filenames if re.match(pattern, fn)]
     print(pattern)
     print(notebook_files) 
+    print(filenames)
     
     if len(notebook_files) == 1:
         return notebook_files[0]
